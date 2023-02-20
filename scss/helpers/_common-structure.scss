@@ -1,0 +1,140 @@
+
+// Headings 
+.main-heading-title{
+    font-size: 48px;
+    font-family: $primary-font-medium;
+    line-height: 64px;
+}
+.submain-heading-title{
+    font-size: 36px;
+    font-family: $primary-font-regular;
+    line-height: 44px;
+}
+.secondary-heading{
+    font-size: 26px;
+    font-family: $primary-font-regular;
+    line-height: 36px;
+}
+.highlight-heading {
+    font-size: 26px;
+    font-family: $primary-font-semibold;
+    line-height: 36px;
+}
+.popup-heading{
+    font-size: 26px;
+    line-height: 34px;
+}
+
+
+.bg-primary {
+    background-color: $primary-color !important;
+}
+.underLine-link{
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover{
+        color: $primary-color;
+    }
+    
+}
+
+
+.login-container{
+    min-height: 100vh;
+    display: flex;
+
+    .login-container-left{
+        background-color: $primary-color;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $white-color;
+    }
+    .login-container-right{
+        width: 60%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        .login-form{
+            width: 552px;
+            max-width: 100%;
+            margin-top: 60px;
+
+            .highlight-heading{
+                margin-bottom: 40px;
+            }
+            .forgot-password-link{
+                font-size: 18px;
+                border-bottom: 1px solid $primary-color;
+                padding-bottom: 4px;
+                font-family: $primary-font-semibold;
+            }
+            #captcha{
+                letter-spacing: 20px;
+                max-width: 100%;
+            }
+            .register-text{
+                font-size: 24px;
+                font-family: $primary-font-semibold;
+                color: #25243B;
+                a{
+                    color: $primary-color;
+                    border-bottom: 1px solid $primary-color;
+                    padding-bottom: 4px;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+            .buttons-section{
+                margin-top: 40px;
+                button{
+                    min-width: 300px;
+                }
+            }
+            .email-error-text{
+                i{
+                    background-color: $danger-color;
+                    color: $white-color;
+                    font-size: 14px;
+                    padding: 1px 5px;
+                    border-radius: 50%;
+                }
+                .error-text{
+                    color: $danger-color;
+                }
+            }
+        }
+        .success-msg{
+            width: 552px;
+            max-width: 100%;
+            margin-top: 60px;
+            border: 1px solid $success-color;
+            border-radius: 8px;
+            padding: 20px;
+            font-size: 18px;
+
+            .check-icon{
+                i{
+                    color: $white-color;
+                    background-color: $success-color;
+                    padding: 5px;
+                    border-radius: 50%;
+                    font-size: 14px;
+                }
+            }
+            .error-text{
+                color: $dark-gray-color ;
+            }
+        }
+    }
+    
+}
+
+
+
